@@ -1,0 +1,2 @@
+d:\work\9Lenses\TestProject\TestProject\obj\Debug\TestProject.njsprojResolveAssemblyReference.cache
+d:\work\9Lenses\TestProject\TestProject\bin\Microsoft.NodejsTools.WebRole.dll

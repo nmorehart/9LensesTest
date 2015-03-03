@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+<link href="stylesheets/style.css" rel="stylesheet" />
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+<script src="https://cdn.socket.io/socket.io-1.3.4.js"></script>
+<script src="javascripts/testProject.js"></script>
+<script language="javascript">
+  var app = angular.module("testProject", []); // creating a APP
+  app.controller('DataPointsViewModel', DataPointsViewModel); // Registering the VM
+  var socket = io();
+</script>
+<body ng-app="testProject">
+  <div ng-controller="DataPointsViewModel">
+      <form id="form">
+        <input type="number" id="tPoints" ng-model="dataPointsM.TotalDataPoints" />
+        <input type="button" ng-click="Update(dataPointsM.TotalDataPoints);" value="Update DataPoints" />
+
+        <p>The model contains {{dataPointsM.TotalDataPoints}} datapoints.</p>
+    </form>
+  </div>
+</body>
+</html>
