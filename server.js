@@ -51,11 +51,11 @@ var mysql = require('mysql');
 
 function getConnection() {
     return mysql.createConnection({
-        host     : 'nmorehart-dbs.chavqmaht5ao.us-west-2.rds.amazonaws.com',
+        host     : 'aam6f9pryk9mg2.chavqmaht5ao.us-west-2.rds.amazonaws.com',
         port     : 3306,
         user     : 'nmorehart',
         password : 'bR2qtHwsUnad',
-        database : 'NineLensesTest',
+        database : 'ebdb',
     });
 }
 
