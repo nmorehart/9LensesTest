@@ -8,6 +8,19 @@ var morgan = require('morgan')
 var methodOverride = require('method-override');
 var errorHandler = require('errorhandler');
 var io = require('socket.io')(http);
+//var forever = require('forever-monitor');
+
+//var child = new (forever.Monitor)('server.js', {
+//    max: 3,
+//    silent: true,
+//    options: []
+//});
+
+//child.on('exit', function () {
+//    console.log('server.js has exited after 3 restarts');
+//});
+
+//child.start();
 
 // configure app to use bodyParser()
 // this will let us get the data from a POST
@@ -38,12 +51,11 @@ var mysql = require('mysql');
 
 function getConnection() {
     return mysql.createConnection({
-        //host     : 'ninelenses-nmorehart.chavqmaht5ao.us-west-2.rds.amazonaws.com',
-        host     : '127.0.0.1',
+        host     : 'nmorehart-dbs.chavqmaht5ao.us-west-2.rds.amazonaws.com',
         port     : 3306,
         user     : 'nmorehart',
         password : 'bR2qtHwsUnad',
-        database : 'ninelenses',
+        database : 'NineLensesTest',
     });
 }
 
