@@ -1,3 +1,5 @@
+CREATE DATABASE NineLenses;
+
 USE NineLenses;
 
 /*CREATE TABLE*/
