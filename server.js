@@ -51,7 +51,7 @@ var mysql = require('mysql');
 
 function getConnection() {
     return mysql.createConnection({
-        host     : 'aam6f9pryk9mg2.chavqmaht5ao.us-west-2.rds.amazonaws.com',
+        host     : 'nmorehart-dbs.chavqmaht5ao.us-west-2.rds.amazonaws.com',
         port     : 3306,
         user     : 'nmorehart',
         password : 'bR2qtHwsUnad',
